@@ -78,12 +78,11 @@ h1,h2 {
     color: #333; /* Dark gray text color for headers */
 }
   
-.flex-container{
-    p {
-        text-decoration: underline; /* Underline/Justify for paragraphs */
-        text-align: justify; 
-    }
+.flex-container {
+    text-decoration: underline; /* Underline for paragraphs */
+    text-align: justify; /* Justify alignment for paragraphs */
 }
+
   
 
 
@@ -137,9 +136,10 @@ ul li {
 }
 
 .block {
-    display: block; /* Block padding */
-    padding: .5em, .5em, .5em, .5em;
+    padding: 0.5em 0.5em 0.5em 0.5em; /* Block padding */
 }
+
+
 
 a[title] {
     color: purple; /* Color applied to title */

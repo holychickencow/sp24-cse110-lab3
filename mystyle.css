@@ -1,0 +1,167 @@
+*{
+    background-color: lightpink; /* Universal Selector */
+}
+
+.container {
+width: 80%; /* Relative unit */
+}
+
+.element {
+width: 200px; /* Absolute unit */
+height: 3em; 
+}
+
+.image {
+max-width: 100%; /* Relative unit */
+min-width: 0%;
+}
+
+h1:has(+ h2) {
+    margin: 0 0 0.25rem 0; /* has selector for h1 followed by h2 */
+}
+
+.container {
+    margin: 20px; /* Short-hand margin */
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+
+.flex-container {
+    display: flex; /* Flex container */
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+.flex-item {
+    flex-grow: 1; /* Flex property */
+    flex-basis: 30%; 
+    margin: 10px; 
+}
+
+.grid-container {
+    display: grid; /* Grid container */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px; 
+}
+
+.grid-item {
+    background-color: lightblue; /* Background color for grid items */
+    padding: 10px; 
+    text-align: center; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .flex-item {
+        flex-basis: 45%; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flex-item {
+        flex-basis: 100%; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    }
+}
+
+h1,h2 {
+    color: #333; /* Dark gray text color for headers */
+}
+  
+.flex-container{
+    p {
+        text-decoration: underline; /* Underline/Justify for paragraphs */
+        text-align: justify; 
+    }
+}
+  
+
+
+.block {
+    display: block; /* Block-level element */
+    position: fixed;
+}
+  
+.inline {
+    display: inline; /* Inline-level element */
+}
+
+.image {
+    width: 100%; /* Width 100% of parent */
+}
+  
+.container {
+    height: 200px; /* Fixed container */
+    position: relative; 
+}
+  
+
+a:hover {
+    color: red; /* hover color*/
+}
+
+.flex-container {
+    display: flex; /* Flex container/ horizontal */
+    justify-content: space-between; 
+}
+  
+.flex-item {
+    flex-grow: 1; /* Flex grow property */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Google font */
+    background-color: lightpink; /* Color and font applied to body */
+    color: #e6e6fa;
+    font-size: 20px;
+}
+ul li {
+    color:rgb(233, 233, 163); /* Color applied to unordered list */
+}
+#chicken {
+    color: blue;
+}
+
+:root {
+    --font-color: #333; /* Fallback */
+}
+
+.block {
+    display: block; /* Block padding */
+    padding: .5em, .5em, .5em, .5em;
+}
+
+a[title] {
+    color: purple; /* Color applied to title */
+}
+
+header h1 {
+    color: blue; /* Descendant Combinator */
+}
+  
+.flex-container > h3 {
+    font-weight: bold; /* Child Combinator */
+}
+
+hr ~ p {
+    font-style: italic; /* General sibling combinator */
+}
+
+hr + img {
+    width: 200px; /* Adjacent sibling combinator */
+}
+
+nav a[href="https://github.com/holychickencow/Lab2_Starter"] {
+    color: green; /* Combining Two Selectors */
+}
+  
